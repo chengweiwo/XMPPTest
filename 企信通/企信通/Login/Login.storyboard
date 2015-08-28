@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lEA-Bo-Q70"/>
+                        <viewControllerLayoutGuide type="bottom" id="hDD-D2-04Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rdi-zr-2CL">
+                                <rect key="frame" x="0.0" y="60" width="320" height="170"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户姓名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="inz-OI-ILD">
+                                        <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="1HV-U9-RTV"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AaE-Bq-dZi">
+                                        <rect key="frame" x="20" y="58" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="2Oq-K1-Qy9"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入服务器地址" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mik-Y2-igg">
+                                        <rect key="frame" x="20" y="96" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="BTA-dX-iZi"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlQ-C1-f9J">
+                                        <rect key="frame" x="21" y="137" width="129" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="注册">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="userLoginAndRegister:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LgL-oz-993"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6m-9H-65i">
+                                        <rect key="frame" x="171" y="137" width="129" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="登录">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="userLoginAndRegister:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EHl-hV-uXw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="bai-ov-adD"/>
+                                    <constraint firstAttribute="height" constant="170" id="oYG-xD-fX0"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版权所有 2013-2014, 传智播客" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2F-tt-Wmn">
+                                <rect key="frame" x="0.0" y="238" width="320" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rdi-zr-2CL" firstAttribute="top" secondItem="lEA-Bo-Q70" secondAttribute="bottom" constant="40" id="Jkc-9D-3xY"/>
+                            <constraint firstItem="H2F-tt-Wmn" firstAttribute="top" secondItem="Rdi-zr-2CL" secondAttribute="bottom" constant="8" id="ZDg-mC-AjW"/>
+                            <constraint firstItem="H2F-tt-Wmn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="n7U-8I-5yU"/>
+                            <constraint firstAttribute="centerX" secondItem="Rdi-zr-2CL" secondAttribute="centerX" id="q2W-da-Ze5"/>
+                            <constraint firstAttribute="trailing" secondItem="H2F-tt-Wmn" secondAttribute="trailing" id="vyb-ny-ipT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hostNameText" destination="Mik-Y2-igg" id="Yqe-mk-YFo"/>
+                        <outlet property="loginButton" destination="p6m-9H-65i" id="7Vr-jL-QPs"/>
+                        <outlet property="passwordText" destination="AaE-Bq-dZi" id="8EL-wh-kmP"/>
+                        <outlet property="registerButton" destination="hlQ-C1-f9J" id="529-S7-lZu"/>
+                        <outlet property="userNameText" destination="inz-OI-ILD" id="lk1-67-e65"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
